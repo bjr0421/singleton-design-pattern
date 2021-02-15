@@ -46,10 +46,12 @@ public class Library {
     public void checkInBook(String bookName, int numToAdd) {
         if (books.containsKey(bookName)) {
             books.put(bookName, books.remove(bookName)+numToAdd);
+            System.out.println("A new copy of " + bookName + " was added to the library");
         } else {
             books.put(bookName, numToAdd);
+            System.out.println(bookName + " was added to the library");
         }
-        System.out.println("A new copy of " + bookName + " was added to the library");
+        //System.out.println("A new copy of " + bookName + " was added to the library");
     }
 
     /**
