@@ -51,7 +51,6 @@ public class Library {
             books.put(bookName, numToAdd);
             System.out.println(bookName + " was added to the library");
         }
-        //System.out.println("A new copy of " + bookName + " was added to the library");
     }
 
     /**
